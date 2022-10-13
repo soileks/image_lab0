@@ -1,0 +1,5 @@
+add_executable(e_test test_main.cpp test_add.h)
+#target_include_directories(e_test PUBLIC ../execut_test)
+target_include_directories(e_test PUBLIC ../Mylib)
+target_include_directories(e_test PUBLIC ../gtest)
+target_link_libraries(e_test Mylib gtest)
